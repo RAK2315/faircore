@@ -43,6 +43,7 @@ _session_store: dict = {}
 
 
 @app.get("/health")
+@app.head("/health")
 def health():
     return {"status": "ok", "version": "2.1.0"}
 
