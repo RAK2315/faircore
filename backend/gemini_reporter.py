@@ -73,7 +73,7 @@ Be direct, specific, and use numbers. Write for a non-technical executive audien
 def _try_gemini(prompt: str, api_key: str) -> str:
     import google.generativeai as genai
     genai.configure(api_key=api_key)
-    for model_name in ["gemini-1.5-flash", "gemini-1.5-flash-latest", "gemini-1.0-pro"]:
+    for model_name in ["gemini-2.0-flash-lite", "gemini-2.0-flash", "gemini-flash-latest"]:
         try:
             model = genai.GenerativeModel(model_name)
             response = model.generate_content(prompt)
@@ -99,9 +99,10 @@ def _try_groq(prompt: str, api_key: str) -> str:
         headers={
             "Authorization": f"Bearer {api_key}",
             "Content-Type": "application/json",
+            "User-Agent": "FairCore/1.0",
         },
         method="POST"
-    )
+)
     with urllib.request.urlopen(req, timeout=30) as resp:
         result = json.loads(resp.read().decode("utf-8"))
     return result["choices"][0]["message"]["content"]
