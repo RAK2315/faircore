@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+.venv/
+venv/
+env/
+
+# Environment
+.env
+*.env.local
+
+# Models and data (large files)
+*.pkl
+*.joblib
+*.h5
+*.onnx
+demo_model.pkl
+demo_dataset.csv
+test_artifacts/
+
+# Node
+node_modules/
+dist/
+.DS_Store
+
+# Vite
+*.local
+
+# IDE
+.vscode/settings.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Logs
+*.log
+uvicorn.log
+
+# OS
+Thumbs.db
+.DS_Store
