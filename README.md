@@ -292,8 +292,6 @@ faircore/
 
 **Rehaan Ahmad Khan** — B.Tech CS (AI & ML), JSS University Noida
 
-Grand Finalist — India AI Impact Buildathon 2026 (Top 850 / 38,000+ teams)
-
 Specialist in ML pipelines, NLP, computer vision, and agentic AI systems.
 
 [GitHub](https://github.com/RAK2315) · [LinkedIn](https://linkedin.com/in/rehaanak)
