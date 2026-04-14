@@ -73,7 +73,7 @@ Be direct, specific, and use numbers. Write for a non-technical executive audien
 def _try_gemini(prompt: str, api_key: str) -> str:
     import google.generativeai as genai
     genai.configure(api_key=api_key)
-    for model_name in ["gemini-2.0-flash", "gemini-1.5-flash", "gemini-2.0-flash-lite", "gemini-1.5-flash-latest"]:
+    for model_name in ["gemini-1.5-flash", "gemini-1.5-flash-latest", "gemini-1.0-pro"]:
         try:
             model = genai.GenerativeModel(model_name)
             response = model.generate_content(prompt)
