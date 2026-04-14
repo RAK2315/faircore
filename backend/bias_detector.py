@@ -11,9 +11,9 @@ from typing import Any
 
 PROTECTED_KEYWORDS = [
     "gender", "sex", "race", "ethnicity", "age", "religion",
-    "nationality", "marital", "disability", "color", "caste"
+    "nationality", "marital", "disability", "color", "caste",
+    "sexual", "orientation", "identity", "citizen"
 ]
-
 
 def auto_detect_protected_attributes(df: pd.DataFrame, target_col: str) -> list[str]:
     candidates = []
@@ -25,7 +25,7 @@ def auto_detect_protected_attributes(df: pd.DataFrame, target_col: str) -> list[
             candidates.append(col)
             continue
 
-        if df[col].nunique() <= 10:
+        if df[col].nunique() <= 6:
             try:
                 contingency = pd.crosstab(df[col], df[target_col])
                 chi2, p, _, _ = chi2_contingency(contingency)
