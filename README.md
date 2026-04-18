@@ -12,8 +12,7 @@
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.111-009688?style=for-the-badge&logo=fastapi)](https://fastapi.tiangolo.com)
 [![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react)](https://react.dev)
 
-[**Live Demo**](https://faircore-v2.vercel.app/) · [**API Docs**](https://your-backend-url.run.app/docs) · [**Demo Video**](#https://youtu.be/Vha1dE2walM)
-
+[**Live Demo**](https://faircore-v2.vercel.app/) · [**API Docs**](https://faircore.onrender.com/docs) · [**Demo Video**](https://youtu.be/Vha1dE2walM)
 </div>
 
 ---
